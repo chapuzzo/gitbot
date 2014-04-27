@@ -16,5 +16,12 @@ describe Gitbot::Application, 'Application configuration' do
 	it 'should exit if no user or password' do
 		
 	end
+
+
+	# SHOULD
+	# - Exit if no account
+	# - Exit if no repos
+	# - Exit if no valid account
+	
   end
 end

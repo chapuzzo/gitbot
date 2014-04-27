@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.1.0
 script:
-  - bundle exec spect
+  - bundle exec spec
   - bundle exec rake
 addons:
    code_climate:
