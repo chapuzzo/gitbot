@@ -45,3 +45,7 @@ end
 # Extra gems
 gem 'google-search'
 gem 'giphy'
+gem "codeclimate-test-reporter", group: :test, require: nil
+gem 'github_api'
+gem 'coveralls', require: false
+
