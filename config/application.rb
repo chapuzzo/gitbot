@@ -13,16 +13,17 @@ Bundler.require(:default, Rails.env)
 
 module Gitbot
   class Application < Rails::Application
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+    # Autoload lib/ folder including all subdirectories
+    config.autoload_paths += Dir["#{config.root}/lib", "#{config.root}/lib/**/"]
 
-    # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
-    # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    # config.time_zone = 'Central Time (US & Canada)'
+    # Loading accounts config
+    $accounts = YAML.load_file('config/accounts.yml')
+    $github = github = Github.new basic_auth: "#{$accounts["github"]["username"]}:#{$accounts["github"]["password"]}"
 
-    # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    # Checking config loaded
+    require 'github_helper'
+    repos_checking_error = Github::Helper.check_repos($accounts["github"]["repos"],$github)
+    if repos_checking_error then raise RuntimeError, "#{repos_checking_error}" end
+
   end
 end

@@ -1,0 +1,10 @@
+github: 
+  username: pepibumur
+  password: 4w4OU4UAQBoc
+  repos: 
+    - 
+      org_name: teambox
+      name: teambox-hosted
+    - 
+      name: PPiAwesomeButton
+      org_name: pepibumur

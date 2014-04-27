@@ -48,4 +48,10 @@ gem 'giphy'
 gem "codeclimate-test-reporter", group: :test, require: nil
 gem 'github_api'
 gem 'coveralls', require: false
+gem 'byebug'
+
+# Tests
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+end
 
