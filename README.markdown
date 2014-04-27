@@ -5,6 +5,8 @@ Gitbot
 [![Dependency Status](https://gemnasium.com/pepibumur/gitbot.svg)](https://gemnasium.com/pepibumur/gitbot)
 [![Coverage Status](https://coveralls.io/repos/pepibumur/gitbot/badge.png)](https://coveralls.io/r/pepibumur/gitbot)
 
+![image](http://cl.ly/image/2C0o0T0I3p35/Image%202014-04-27%20at%202.14.03%20pm.png)
+
 Gitbot takes advantages of Github hooks to do your repo more interacive thanks to a new user bot in your repo. Gitbot then is a Rails application that can be deployed for example in Heroku and connected to your repo through an user with permission to access that repo.
 
 #### Available hooks
