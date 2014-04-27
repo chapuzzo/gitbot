@@ -41,3 +41,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Extra gems
+gem 'google-search'
+gem 'giphy'
