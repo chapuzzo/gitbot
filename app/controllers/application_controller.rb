@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
 
   # Main Endpoint to receive Webhooks call
   def create
+    Gibbot.parse(headers,body)
     render json: {status: "ok", message: "Gitbot is processing your request, MEC MEC!"}, status: 200
   end
 end

@@ -5,6 +5,14 @@ github:
     - 
       org_name: teambox
       name: teambox-hosted
+      bots:
+        - image-bot
     - 
       name: PPiAwesomeButton
       org_name: pepibumur
+      bots:
+        - image-bot
+
+giphy:
+  verion: ~
+  api_key: dc6zaTOxFJmzC
