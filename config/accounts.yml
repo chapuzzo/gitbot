@@ -14,5 +14,5 @@ github:
         - image-bot
 
 giphy:
-  verion: ~
+  verion: 
   api_key: dc6zaTOxFJmzC

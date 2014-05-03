@@ -27,3 +27,7 @@ Gitbot::Client
 ### Setup Gitbot with your HerokuApp
 
 ### Setup Gitbot repos and enabled features for these repos
+
+
+### Progress
+- **4 May 2014**: I've implemented bots. The next step is connect repo settings with different available bots in GitBotLib class.
