@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
 
   # Main Endpoint to receive Webhooks call
   def create
-    render :status => 200
+    render json: {status: "ok", message: "Gitbot is processing your request, MEC MEC!"}, status: 200
   end
 end
