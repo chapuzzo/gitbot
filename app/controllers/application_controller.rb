@@ -5,9 +5,6 @@ class ApplicationController < ActionController::Base
 
   # Main Endpoint to receive Webhooks call
   def create
-    puts "AAAAAAAAAHHHHHHHH"
-
-
     render :status => 200
   end
 end
